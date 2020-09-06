@@ -2,7 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Rob--W/cors-anywhere/badge.svg?branch=master)](https://coveralls.io/github/Rob--W/cors-anywhere?branch=master)
 
 ## Heroku Deploy
-#### UPDATE .env to the deployment server
+#### UPDATE [heroku config vars])
 ```bash
 # install heroku
 # login to account
@@ -13,6 +13,10 @@ git clone https://github.com/desarquivo/cors-anywhere
 cd cors-anywhere
 # create an heroku app for the repo
 heroku create
+# update config vars https://devcenter.heroku.com/articles/config-vars#using-the-heroku-cli
+heroku config:set CORSANYWHERE_WHITELIST=http://35.234.109.95/
+# check config vars
+heroku config
 # push the app to github
 git push origin main
 # push the app to heroku
