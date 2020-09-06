@@ -2,6 +2,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/Rob--W/cors-anywhere/badge.svg?branch=master)](https://coveralls.io/github/Rob--W/cors-anywhere?branch=master)
 
 ## Heroku Deploy
+#### UPDATE .env to the deployment server
 ```bash
 # install heroku
 # login to account
@@ -12,8 +13,12 @@ git clone https://github.com/desarquivo/cors-anywhere
 cd cors-anywhere
 # create an heroku app for the repo
 heroku create
-# push the app
+# push the app to github
+git push origin main
+# push the app to heroku
 git push heroku main
+# open to check everything is working
+heroku open
 ```
 
 **CORS Anywhere** is a NodeJS proxy which adds CORS headers to the proxied request.
