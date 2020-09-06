@@ -14,7 +14,7 @@ cd cors-anywhere
 # create an heroku app for the repo
 heroku create
 # update config vars https://devcenter.heroku.com/articles/config-vars#using-the-heroku-cli
-heroku config:set CORSANYWHERE_WHITELIST=http://35.234.109.95/
+heroku config:set CORSANYWHERE_WHITELIST=https://msramalho.github.io/desarquivo,https://desarquivo.github.io
 # check config vars
 heroku config
 # push the app to github
